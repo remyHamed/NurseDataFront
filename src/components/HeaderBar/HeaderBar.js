@@ -2,6 +2,12 @@ import React from 'react';
 import Headerbar from './HeaderBar.css'
 
 function HeaderBar() {
+    const routeChange = () =>{
+        const path = `https://www.doctolib.fr/infirmier/puteaux/anne-chir/booking/places?specialityId=30&telehealth=false&profile_skipped=true&bookingFunnelSource=external_referral`;
+        window.open(path, "_blank");
+    }
+
+
     return (
         <header id = "headerBar">
             <div id='title-container'>
@@ -19,7 +25,7 @@ function HeaderBar() {
                 <nav>
                     <ul>
                         <li>
-                            Acceuil
+                            Accueil
                         </li>
                         <li>
                             Les infirmiers
@@ -34,7 +40,7 @@ function HeaderBar() {
                 </nav>
             </div>
             <div>
-                <button>
+                <button onClick={routeChange}>
                     Prendre rendez-vous
                 </button>
             </div>

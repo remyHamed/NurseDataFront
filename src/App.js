@@ -1,12 +1,9 @@
-import logo from './logo.svg';
 import './App.css';
-import HeaderBar from "./components/HeaderBar/HeaderBar";
+import Home from "./scenes/Home/Home";
 
 function App() {
   return (
-    <div className="App">
-      <HeaderBar></HeaderBar>
-    </div>
+    <Home></Home>
   );
 }
 
