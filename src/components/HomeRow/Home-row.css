@@ -1,0 +1,21 @@
+/* Style.css */
+.container {
+  position: relative;
+  text-align: center;
+  color: white; /* Couleur du texte, ajustez selon votre préférence */
+  margin-top: 3em;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 100px; /* Ajustez la taille de police selon votre préférence */
+  color: white;
+  font-weight: bold;
+}
+
+img {
+  opacity: .75;
+}
