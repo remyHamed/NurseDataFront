@@ -1,8 +1,23 @@
-/* Style.css */
+/* Ajout de l'animation */
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.container-appear {
+  animation: slideInFromLeft 1s ease-out forwards;
+}
+
 .container {
   position: relative;
   text-align: center;
-  color: white; /* Couleur du texte, ajustez selon votre préférence */
+  color: white;
   margin-top: 3em;
 }
 
@@ -11,7 +26,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 100px; /* Ajustez la taille de police selon votre préférence */
+  font-size: 100px;
   color: white;
   font-weight: bold;
 }
