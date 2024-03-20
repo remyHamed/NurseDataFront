@@ -1,13 +1,23 @@
 import React from "react";
 import background from './../../assets/background.webp';
-import './Home-row.css'; // Assurez-vous que le chemin est correct
+import nurse from './../../assets/n2.jpg';
+import './Home-row.css';
 
 
 function HomeRow() {
     return (
-        <div className="container container-appear"> {/* Ajout de la classe ici */}
-            <img src={background} alt="Background"/>
-            <div className="overlay-text">sqdfqsdfhqsdjfhkqsdjlhflkqsdhfk qs</div>
+        <div className="container container-appear">
+            <img src={nurse} alt="Top Left" className="image-top-left"/>
+            <img src={background} alt="Background" id="img-1"/>
+            <div id="s-1" className="overlay-text">
+                Besoin de soin à domicile ?
+                <p>
+                    Soins à domicile et au cabinet 7/7 jours.
+                    Prise de rendez vous à domicile par appel téléphonique uniquement.
+                    12 Rue Jean Jaurès, 92800 Puteaux
+                </p>
+            </div>
+
         </div>
     );
 }
