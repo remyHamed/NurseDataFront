@@ -1,14 +1,8 @@
 import React, {useEffect, useState} from "react";
-import background from './../../assets/background.webp';
-import nurse from './../../assets/n2.jpg';
 import './Home-row.css';
-import PhoneHeaderBar from "../HeaderBar/PhoneHeaderBar/PhoneHeaderBar";
-import TabletHeaderBar from "../HeaderBar/TabletHeaderBar/TabletHeaderBar";
-import SmallLapTopHeaderBar from "../HeaderBar/SmallLapTopHeaderBar/SmallLapTopHeaderBar";
-import LargeViewHeaderBar from "../HeaderBar/LargeViewHeaderBar/LargeViewHeaderBar";
-import PhoneHomeRowComponent from "./PhoneHomeRowComponent/PhoneHeaderBar";
-import TabletHomeRowComponent from "./TabletHomeRowComponent/TabletHeaderBar";
-import SmallLapTopHomeRowComponent from "./SmallLapTopHomeRowComponent/SmallLapTopHeaderBar";
+import PhoneHomeRowComponent from "./PhoneHomeRowComponent/PhoneHomeRowComponent";
+import TabletHomeRowComponent from "./TabletHomeRowComponent/TabletHomeRowComponent";
+import SmallLapTopHomeRowComponent from "./SmallLapTopHomeRowComponent/SmallLapTopHomeRowComponent";
 import LargeViewHomeRowComponent from "./LargeViewHomeRowComponent/LargeViewHomeRowComponent";
 
 
@@ -28,7 +22,7 @@ function HomeRow() {
     };
 
     const selectComponentBasedOnWidth = () => {
-        if (windowWidth < breakpoints.phone) {
+        if (windowWidth <= breakpoints.phone) {
             return <PhoneHomeRowComponent />;
         } else if (windowWidth >= breakpoints.phone && windowWidth < breakpoints.tablet) {
             return <TabletHomeRowComponent />;

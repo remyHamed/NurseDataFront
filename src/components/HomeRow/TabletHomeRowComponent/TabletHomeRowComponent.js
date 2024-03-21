@@ -1,11 +1,9 @@
 import React from "react";
-import PhoneHeaderBarStyle from "./PhoneHeaderBarStyle.css"
 import nurse from "../../../assets/n2.jpg";
 import background from "../../../assets/background.webp";
+import TabletHomeRowStyle from "./TabletHomeRowStyle.css"
 
-
-function PhoneHomeRowComponent() {
-
+function TabletHomeRowComponent() {
 
     return (
         <div className="container container-appear">
@@ -16,7 +14,7 @@ function PhoneHomeRowComponent() {
                 <img src={background} alt="Background" id="img-1"/>
             </div>
             <div id="s-1" className="overlay-text">
-                Besoin de soin à domicile ?
+                TBesoin de soin à domicile ?
                 <p>
                     Soins à domicile et au cabinet 7/7 jours.
                     Prise de rendez vous à domicile par appel téléphonique uniquement.
@@ -27,4 +25,4 @@ function PhoneHomeRowComponent() {
     );
 }
 
-export default PhoneHomeRowComponent;
+export default TabletHomeRowComponent;

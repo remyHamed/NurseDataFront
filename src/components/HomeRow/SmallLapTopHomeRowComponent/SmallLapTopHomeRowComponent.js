@@ -1,9 +1,9 @@
 import React from "react";
-import TabletHeaderBarStyle from './TabletHeaderBarStyle.css'
+import SmallLapTopHeaderBarStyle from "./SmallLapTopHomeRowStyle.css"
 import nurse from "../../../assets/n2.jpg";
 import background from "../../../assets/background.webp";
 
-function TabletHomeRowComponent() {
+function SmallLapTopHomeRowComponent() {
 
     return (
         <div className="container container-appear">
@@ -14,7 +14,7 @@ function TabletHomeRowComponent() {
                 <img src={background} alt="Background" id="img-1"/>
             </div>
             <div id="s-1" className="overlay-text">
-                Besoin de soin à domicile ?
+                SBesoin de soin à domicile ?
                 <p>
                     Soins à domicile et au cabinet 7/7 jours.
                     Prise de rendez vous à domicile par appel téléphonique uniquement.
@@ -25,4 +25,4 @@ function TabletHomeRowComponent() {
     );
 }
 
-export default TabletHomeRowComponent;
+export default SmallLapTopHomeRowComponent;
