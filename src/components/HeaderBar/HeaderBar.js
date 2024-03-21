@@ -1,51 +1,38 @@
-import React from 'react';
-import Headerbar from './HeaderBar.css'
+import React, {useEffect, useState} from 'react';
+import PhoneHeaderBar from "./PhoneHeaderBar/PhoneHeaderBar";
+import TabletHeaderBar from "./TabletHeaderBar/TabletHeaderBar";
+import SmallLapTopHeaderBar from "./SmallLapTopHeaderBar/SmallLapTopHeaderBar";
+import LargeViewHeaderBar from "./LargeViewHeaderBar/LargeViewHeaderBar";
 
 function HeaderBar() {
-    const routeChange = () =>{
-        const path = `https://www.doctolib.fr/infirmier/puteaux/anne-chir/booking/places?specialityId=30&telehealth=false&profile_skipped=true&bookingFunnelSource=external_referral`;
-        window.open(path, "_blank");
-    }
+    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
+    useEffect(() => {
+        const handleResize = () => setWindowWidth(window.innerWidth);
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
 
-    return (
-        <header id = "headerBar">
-            <div id='title-container'>
-                <h2 id="title-1">
-                    Anne Chir - Dominique Fernandez
-                </h2>
-                <h3 id="title-2">
-                    Cabinet infirmier
-                </h3>
-                <h4  id="title-3">
-                    Puteaux, Rueil
-                </h4>
-            </div>
-            <div>
-                <nav>
-                    <ul>
-                        <li>
-                            Accueil
-                        </li>
-                        <li>
-                            Les infirmiers
-                        </li>
-                        <li>
-                            Les soins à domicile
-                        </li>
-                        <li>
-                            Les soins en Cabinet
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-            <div>
-                <button onClick={routeChange}>
-                    Prendre rendez-vous
-                </button>
-            </div>
-        </header>
-    );
+    const breakpoints = {
+        phone: 600,
+        tablet: 900,
+        smallLaptop: 1200,
+    };
+
+    const selectComponentBasedOnWidth = () => {
+        if (windowWidth < breakpoints.phone) {
+            return <PhoneHeaderBar />;
+        } else if (windowWidth >= breakpoints.phone && windowWidth < breakpoints.tablet) {
+            return <TabletHeaderBar />;
+        } else if (windowWidth >= breakpoints.tablet && windowWidth < breakpoints.smallLaptop) {
+            return <SmallLapTopHeaderBar />;
+        } else {
+            return <LargeViewHeaderBar />;
+        }
+    };
+
+    return selectComponentBasedOnWidth();
 }
 
 export default HeaderBar;
+
