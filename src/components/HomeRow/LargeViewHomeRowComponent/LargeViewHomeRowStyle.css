@@ -55,7 +55,7 @@ body {
 .overlay-text-l {
     position: absolute;
     top: 19%;
-    left: 50%;
+    left: 45%;
     transform: translate(-50%, -50%);
     font-size: 35px;
     color: white;
@@ -65,15 +65,16 @@ body {
 }
 
 .overlay-text-l > #sentence-1-l  {
-    color: #1e3cff;
+    color: white;
     font-weight: bold;
     font-family: Montserrat, sans-serif;
+    font-size: 60px;
+    margin-top: 5em;
 }
-
 
 .sentence-2-l {
     font-family: Montserrat, sans-serif;
-    color: black;
+    color: white;
     font-size: 45px;
 }
 
@@ -85,17 +86,18 @@ body {
 }
 
 #s-1-l > p {
-    color: black;
+    color: white;
     text-align: left;
 }
 
-
 .image-wrapper, .background-wrapper {
     position: relative;
+    background-color: black;
 }
 
-#img-1 {
-    opacity: 0.7;
+#img-1-l {
+    opacity: 0.5;
+    width: 100%;
 }
 
 #phoneNumber-l {
@@ -109,6 +111,8 @@ body {
 
     display: flex;
     flex-direction: row;
+
+    background-color: white;
 }
 
 #phoneNumber-l > p {

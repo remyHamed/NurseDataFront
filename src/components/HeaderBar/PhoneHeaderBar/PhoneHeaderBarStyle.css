@@ -22,7 +22,7 @@ header li:hover {
     border-radius: 20px;
 }
 
-header ul {
+#header ul {
     margin-top: 5.5em;
 //padding-top: 5em;
     font-weight: bold;

@@ -23,7 +23,7 @@ function LargeViewHeaderBar() {
                     Puteaux, Rueil
                 </h4>
             </div>
-            <div>
+            <div id="nav-menu-l">
                 <nav>
                     <ul>
                         <li>
