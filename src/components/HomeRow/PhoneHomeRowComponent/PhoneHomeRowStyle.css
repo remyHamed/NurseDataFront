@@ -60,60 +60,41 @@ body {
     font-size: 35px;
     color: white;
     text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000, -1px -2px 0 #000, 1px -2px 0 #000, -2px -1px 0 #000, 2px -1px 0 #000, -2px 1px 0 #000, 2px 1px 0 #000, -1px 2px 0 #000, 1px 2px 0 #000;
+
     z-index: 2;
+
 }
 
 #s-1 {
-    color: dodgerblue;
-    font-weight: bold;
-    margin-left: 1em;
+color: dodgerblue;
+font-weight: bold;
+margin-left: 1em;
 }
 
 #s-2 {
-    position: absolute;
-    top: 40%;
-    left: 55%;
-    transform: translate(-50%, -50%);
-    font-size: 45px;
-    color: black;
-    font-weight: bold;
+position: absolute;
+top: 40%;
+left: 55%;
+transform: translate(-50%, -50%);
+font-size: 45px;
+color: black;
+font-weight: bold;
 }
 
 #s-1 > p {
-    color: black;
-    text-align: left;
+color: black;
+text-align: left;
 }
 
 #s-2 ul {
-    list-style-type: none;
+list-style-type: none;
 }
 
 .image-wrapper, .background-wrapper {
-    position: relative;
+position: relative;
 }
 
 #img-1 {
-    opacity: 0.7;
+opacity: 0.7;
 }
 
-
-@media (min-width: 320px) and (max-width: 480px) {
-    body {
-        background-color: lightblue;
-    }
-}
-
-
-@media (min-width: 481px) and (max-width: 767px) {
-    body {
-        background-color: lightgreen;
-    }
-
-}
-
-
-@media (min-width: 1920px) {
-    body {
-        background-color: lavender;
-    }
-}

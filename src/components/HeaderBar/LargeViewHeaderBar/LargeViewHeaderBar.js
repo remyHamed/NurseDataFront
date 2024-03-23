@@ -11,15 +11,15 @@ function LargeViewHeaderBar() {
     }
 
     return (
-        <header id = "headerBar">
-            <div id='title-container'>
-                <h2 id="title-1">
+        <header id = "headerBar-l">
+            <div id='title-container-l'>
+                <h2 id="title-1-l">
                     Anne Chir - Dominique Fernandez
                 </h2>
-                <h3 id="title-2">
+                <h3 id="title-2-l">
                     Cabinet infirmier
                 </h3>
-                <h4  id="title-3">
+                <h4  id="title-3-l">
                     Puteaux, Rueil
                 </h4>
             </div>
@@ -42,7 +42,7 @@ function LargeViewHeaderBar() {
                 </nav>
             </div>
             <div>
-                <button onClick={routeChange}>
+                <button id="header-button-l" onClick={routeChange}>
                     Prendre rendez-vous
                 </button>
             </div>

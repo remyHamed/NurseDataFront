@@ -98,23 +98,3 @@ body {
 }
 
 
-@media (min-width: 320px) and (max-width: 480px) {
-    body {
-        background-color: lightblue;
-    }
-}
-
-
-@media (min-width: 481px) and (max-width: 767px) {
-    body {
-        background-color: lightgreen;
-    }
-
-}
-
-
-@media (min-width: 1920px) {
-    body {
-        background-color: lavender;
-    }
-}

@@ -1,6 +1,6 @@
 
 
-#headerBar {
+#headerBar-s {
     position: sticky;
     color: dodgerblue;
     display: flex;
@@ -28,12 +28,10 @@ header ul {
     font-weight: bold;
 
     border-radius: 20px;
-    border: black;
-    border-style: solid;
-    border-width: 1px;
+
 }
 
-header button {
+#header button s {
 
     margin: 5em 2em 2em;
 
