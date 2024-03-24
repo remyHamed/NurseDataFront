@@ -50,3 +50,22 @@
     width: 24px;
     height: 15px;
 }
+
+.large-home-image-phone-girl {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 30px;
+    color: dodgerblue;
+    font-weight: bolder;
+    font-family: Montserrat, sans-serif;
+}
+
+.large-home-image-phone-girl-text{
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 200px;
+}
