@@ -14,10 +14,10 @@ function LargeViewHeaderBar() {
         <header id = "headerBar-l">
             <div id='title-container-l'>
                 <h2 id="title-1-l">
-                    Anne Chir - Dominique Fernandez
+                    Cabinet infirmier
                 </h2>
                 <h3 id="title-2-l">
-                    Cabinet infirmier
+                    Anne Chir - Dominique Fernandez
                 </h3>
                 <h4  id="title-3-l">
                     Puteaux, Rueil
@@ -36,7 +36,7 @@ function LargeViewHeaderBar() {
                             Les soins à domicile
                         </li>
                         <li>
-                            Les soins en Cabinet
+                            Les soins au Cabinet
                         </li>
                     </ul>
                 </nav>
