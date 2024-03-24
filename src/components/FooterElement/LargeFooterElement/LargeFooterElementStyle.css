@@ -1,0 +1,14 @@
+
+.foot-large-footer-container {
+    height: 10em;
+    box-shadow: 0 0 0 2px rgba(0,0,0,.5);
+    width: 100%;
+    margin-top: 3em;
+    display: flex;
+    flex-direction: row;
+}
+
+#large-copyright {
+    margin-top:8.5em;
+    margin-left: 3em;
+}

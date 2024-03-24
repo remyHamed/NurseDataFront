@@ -1,0 +1,52 @@
+
+.large-home-image-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 3em;
+}
+
+.large-home-image-container > div > img {
+    width: 300px;
+    height: auto;
+}
+
+.large-home-image-pig {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 30px;
+    color: dodgerblue;
+    font-weight: bolder;
+    font-family: Montserrat, sans-serif;
+}
+
+.large-home-image-pig-text {
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.large-home-image-pig-text > p {
+    margin: 0;
+    padding-top: 1em;
+}
+
+#larg-vCard-container {
+    display: flex;
+    flex-direction: row;
+}
+
+#larg-vCard-container > p {
+    margin: 0;
+    padding-left: 0.5em;
+}
+
+
+#vCarde {
+    width: 24px;
+    height: 15px;
+}
