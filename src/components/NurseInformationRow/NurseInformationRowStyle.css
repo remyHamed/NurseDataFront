@@ -1,0 +1,30 @@
+.container-nurse-information {
+    height: 45vh;
+    color: black;
+    font-weight: bold;
+    font-family: Montserrat, sans-serif;
+    font-size: 25px;
+    margin-top: 5em;
+    margin-bottom: 10em;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1em;
+    box-sizing: border-box;
+    margin-left: 10%;
+}
+
+.container-nurse-information > p {
+    width: 100%; /* Permet au paragraphe de prendre toute la largeur du conteneur */
+    margin: 0; /* Élimine les marges par défaut du paragraphe */
+    text-align: justify;
+    line-height: 1.5;
+}
+
+
+.container-nurse-information > h1 {
+    color: dodgerblue;
+}

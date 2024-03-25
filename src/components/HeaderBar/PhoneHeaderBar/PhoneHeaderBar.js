@@ -1,5 +1,7 @@
-import React from "react";
-import PhoneHeaderBarStyle from "./PhoneHeaderBarStyle.css"
+import React from 'react';
+import {Link} from "react-router-dom";
+import phoneHeaderStyle from "./PhoneHeaderBarStyle.css"
+
 
 
 function PhoneHeaderBar() {
@@ -12,39 +14,41 @@ function PhoneHeaderBar() {
     }
 
     return (
-        <header id = "headerBar">
-            <div id='title-container'>
-                <h1>PhoneHeaderBar</h1>
-                <h2 id="title-1">
-                    Anne Chir - Dominique Fernandez
-                </h2>
-                <h3 id="title-2">
+        <header id = "headerBar-l">
+            <div id="titre-header-l">
+                <h2>
                     Cabinet infirmier
+                </h2>
+                <h3 >
+                    Anne Chir
                 </h3>
-                <h4  id="title-3">
+                <h3 >
+                    Dominique Fernandez
+                </h3>
+                <h4>
                     Puteaux, Rueil
                 </h4>
             </div>
-            <div>
+            <div id="nav-menu-l">
                 <nav>
                     <ul>
                         <li>
-                            Accueil
+                            <Link class="l" to="/">Accueil</Link>
                         </li>
                         <li>
-                            Les infirmiers
+                            <Link class="l" to="/nurseinformation">Les infirmiers</Link>
                         </li>
                         <li>
                             Les soins à domicile
                         </li>
                         <li>
-                            Les soins en Cabinet
+                            Les soins au Cabinet
                         </li>
                     </ul>
                 </nav>
             </div>
             <div>
-                <button onClick={routeChange}>
+                <button id="header-button-l" onClick={routeChange}>
                     Prendre rendez-vous
                 </button>
             </div>

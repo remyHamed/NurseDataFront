@@ -11,6 +11,56 @@
     background-color: white;
 }
 
+#titre-header-l > div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 30px;
+    color: dodgerblue;
+    font-weight: bolder;
+
+    margin-top: 2em;
+}
+
+#titre-header-l {
+    margin-top: 2em;
+}
+
+
+#headerBar-l > div > h2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    //font-size: 30px;
+    color: dodgerblue;
+    font-weight: bolder;
+
+    margin: 0;
+}
+
+#headerBar-l > div > h3 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    //font-size: 30px;
+    color: dodgerblue;
+    font-weight: bolder;
+
+    margin: 0;
+
+}
+
+#headerBar-l > div > h4 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+   //font-size: 30px;
+    color: dodgerblue;
+    font-weight: bolder;
+
+    margin: 0;
+}
+
 header li {
     font-weight: 700;
     text-transform: uppercase;
@@ -35,10 +85,11 @@ header li {
     font-weight: bold;
 
     border-radius: 20px;
+
+    padding-left: 10em;
 }
 
 #header-button-l {
-
     margin: 4em 2em 2em;
     text-transform: uppercase;
     color: dodgerblue;
@@ -85,4 +136,9 @@ header li {
     margin-bottom: 0;
     margin-top: 0;
     padding-bottom: 0;
+}
+
+.l {
+    text-decoration:none;
+    color: dodgerblue;
 }

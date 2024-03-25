@@ -1,5 +1,8 @@
 import React from 'react';
 import LargeViewHeaderBarStyle from "./LargeViewHeaderBarStyle.css";
+import {Link} from "react-router-dom";
+
+
 
 function LargeViewHeaderBar() {
 
@@ -12,14 +15,17 @@ function LargeViewHeaderBar() {
 
     return (
         <header id = "headerBar-l">
-            <div id='title-container-l'>
-                <h2 id="title-1-l">
+            <div id="titre-header-l">
+                <h2>
                     Cabinet infirmier
                 </h2>
-                <h3 id="title-2-l">
-                    Anne Chir - Dominique Fernandez
+                <h3 >
+                    Anne Chir
                 </h3>
-                <h4  id="title-3-l">
+                <h3 >
+                    Dominique Fernandez
+                </h3>
+                <h4>
                     Puteaux, Rueil
                 </h4>
             </div>
@@ -27,10 +33,10 @@ function LargeViewHeaderBar() {
                 <nav>
                     <ul>
                         <li>
-                            Accueil
+                            <Link class="l" to="/">Accueil</Link>
                         </li>
                         <li>
-                            Les infirmiers
+                            <Link class="l" to="/nurseinformation">Les infirmiers</Link>
                         </li>
                         <li>
                             Les soins à domicile

@@ -1,40 +1,96 @@
 
 
-#headerBar-p {
+#headerBar-l {
     position: sticky;
+    top: 0;
     color: dodgerblue;
     display: flex;
     flex-direction: row;
-    margin-left: 10em;
+    padding-left: 10em;
+    z-index: 10;
+    background-color: white;
+}
+
+#titre-header-l > div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 30px;
+    color: dodgerblue;
+    font-weight: bolder;
+
+    margin-top: 2em;
+}
+
+#titre-header-l {
+    margin-top: 2em;
+}
+
+
+#headerBar-l > div > h2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+//font-size: 30px;
+    color: dodgerblue;
+    font-weight: bolder;
+
+    margin: 0;
+}
+
+#headerBar-l > div > h3 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+//font-size: 30px;
+    color: dodgerblue;
+    font-weight: bolder;
+
+    margin: 0;
+
+}
+
+#headerBar-l > div > h4 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+//font-size: 30px;
+    color: dodgerblue;
+    font-weight: bolder;
+
+    margin: 0;
 }
 
 header li {
+    font-weight: 700;
+    text-transform: uppercase;
+    height: 60px;
+    line-height: 60px;
+
     list-style: none;
     display: inline-block;
     padding: 0 20px 0.25em;
     transition: background-color 0.3s, color 0.3s;
 }
 
-header li:hover {
+#headerBar-l ul li:hover {
     color: white;
     background-color: dodgerblue;
-
     border-radius: 20px;
 }
 
-#header ul {
-    margin-top: 5.5em;
-//padding-top: 5em;
+
+#nav-menu-l > nav > ul {
+    margin-top: 3.5em;
     font-weight: bold;
 
     border-radius: 20px;
 
+    padding-left: 10em;
 }
 
-#header button {
-
-    margin: 5em 2em 2em;
-
+#header-button-l {
+    margin: 4em 2em 2em;
     text-transform: uppercase;
     color: dodgerblue;
     background-color: transparent;
@@ -46,7 +102,7 @@ header li:hover {
     transition: background-color 0.3s, color 0.3s;
 }
 
-button:hover {
+#headerBar-l > div > button:hover {
     background-color: dodgerblue;
     color: white;
 }
@@ -60,12 +116,14 @@ button:hover {
     padding-left: 2em;
 }
 
-#title-1 {
+#title-1-l {
+    padding-top: 1em;
+    padding-right: 14em;
     margin-bottom: 0;
     padding-bottom: 0;
 }
 
-#title-2 {
+#title-2-l {
     margin-right: 12.5em;
     margin-bottom: 0;
     margin-top: 0;
@@ -73,12 +131,14 @@ button:hover {
     padding-top: 0;
 }
 
-#title-3 {
+#title-3-l {
     margin-right: 17em;
     margin-bottom: 0;
     margin-top: 0;
     padding-bottom: 0;
 }
-#s-2 {
-    color: black;
+
+.l {
+    text-decoration:none;
+    color: dodgerblue;
 }

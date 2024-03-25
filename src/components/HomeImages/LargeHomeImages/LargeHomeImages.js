@@ -32,8 +32,15 @@ function LargeHomeImages() {
                     Un service 7/7 jours
                 </p>
                 <div  className="large-home-image-phone-girl-text">
-                    <p> 5 infirmiers, Mme Fernandez et Mme Chir, avec 3 collaborateurs,</p>
-                    <p>assurent les permanences au cabinet et à domicile.</p>
+                    <p>
+                        5 infirmiers, Mme Fernandez et Mme Chir,
+                    </p>
+                    <p>
+                        avec 3 collaborateurs,
+                    </p>
+                    <p>
+                        assurent les permanences au cabinet et à domicile.
+                    </p>
                 </div>
             </div>
         </div>

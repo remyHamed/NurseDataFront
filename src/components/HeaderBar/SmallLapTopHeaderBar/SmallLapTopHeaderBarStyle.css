@@ -1,84 +1,42 @@
-
-
-#headerBar-s {
-    position: sticky;
-    color: dodgerblue;
-    display: flex;
-    flex-direction: row;
-    margin-left: 10em;
-}
-
-header li {
-    list-style: none;
-    display: inline-block;
-    padding: 0 20px 0.25em;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-header li:hover {
-    color: white;
-    background-color: dodgerblue;
-
-    border-radius: 20px;
-}
-
-#header ul {
-    margin-top: 5.5em;
-//padding-top: 5em;
-    font-weight: bold;
-
-    border-radius: 20px;
-
-}
-
-#header button s {
-
-    margin: 5em 2em 2em;
-
-    text-transform: uppercase;
-    color: dodgerblue;
-    background-color: transparent;
-    border: 2px solid blue;
-    padding: 10px 20px;
-    font-size: 16px;
-    font-weight: bold;
+.burger {
+    display: none;
     cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
 }
 
-button:hover {
+.burger div {
+    width: 25px;
+    height: 3px;
     background-color: dodgerblue;
-    color: white;
+    margin: 5px;
+    transition: all 0.3s ease;
 }
 
-
-#title-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding-top: 2em;
-    padding-left: 2em;
+#nav-menu-s.open nav {
+    display: block;
 }
 
-#title-1 {
-    margin-bottom: 0;
-    padding-bottom: 0;
-}
+@media (max-width: 768px) {
+    .burger {
+        display: block;
+    }
 
-#title-2 {
-    margin-right: 12.5em;
-    margin-bottom: 0;
-    margin-top: 0;
-    padding-bottom: 0;
-    padding-top: 0;
-}
+    #nav-menu-s nav {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
 
-#title-3 {
-    margin-right: 17em;
-    margin-bottom: 0;
-    margin-top: 0;
-    padding-bottom: 0;
-}
-#s-2 {
-    color: black;
+    #nav-menu-s nav ul {
+        width: 100%;
+        padding-left: 0;
+    }
+
+    #nav-menu-s nav ul li {
+        display: block;
+        text-align: center;
+    }
+
+    #nav-menu-s.open nav {
+        display: flex;
+    }
 }

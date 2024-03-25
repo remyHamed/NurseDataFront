@@ -1,50 +1,44 @@
-import React from "react";
-import SmallLapTopHeaderBarStyle from "./SmallLapTopHeaderBarStyle.css"
+import React, { useState } from 'react';
+import { Link } from "react-router-dom";
+import "./SmallLapTopHeaderBarStyle.css";
 
 function SmallLapTopHeaderBar() {
+    const [menuOpen, setMenuOpen] = useState(false);
 
-    //TODO MUST BECOME AN INPUT
-    //TODO MUST BECOME A GLOBAL VARIABLE
+    const toggleMenu = () => {
+        setMenuOpen(!menuOpen);
+    };
+
     const routeChange = () => {
         const path = `https://www.doctolib.fr/infirmier/puteaux/anne-chir/booking/places?specialityId=30&telehealth=false&profile_skipped=true&bookingFunnelSource=external_referral`;
         window.open(path, "_blank");
-    }
+    };
 
     return (
-        <header id = "headerBar">
-            <div id='title-container'>
-                <h1>SmallLapTopHeaderBar</h1>
-                <h1>SmallLapTopHeaderBar</h1>
-                <h2 id="title-1">
-                    Anne Chir - Dominique Fernandez
-                </h2>
-                <h3 id="title-2">
-                    Cabinet infirmier
-                </h3>
-                <h4  id="title-3">
-                    Puteaux, Rueil
-                </h4>
+        <header id="headerBar-s">
+            <div id="titre-header-s">
+                <p>Cabinet infirmier</p>
+                <p>Anne Chir</p>
+                <p>Dominique Fernandez</p>
+                <p>Puteaux, Rueil</p>
             </div>
-            <div>
+            <div id="nav-menu-s" className={`${menuOpen ? "open" : ""}`}>
+                <div className="burger" onClick={toggleMenu}>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
                 <nav>
                     <ul>
-                        <li>
-                            Accueil
-                        </li>
-                        <li>
-                            Les infirmiers
-                        </li>
-                        <li>
-                            Les soins à domicile
-                        </li>
-                        <li>
-                            Les soins en Cabinet
-                        </li>
+                        <li><Link className="l" to="/">Accueil</Link></li>
+                        <li><Link className="l" to="/nurseinformation">Les infirmiers</Link></li>
+                        <li>Les soins à domicile</li>
+                        <li>Les soins au Cabinet</li>
                     </ul>
                 </nav>
             </div>
             <div>
-                <button onClick={routeChange}>
+                <button id="header-button-s" onClick={routeChange}>
                     Prendre rendez-vous
                 </button>
             </div>
