@@ -3,6 +3,9 @@ import { Link } from "react-router-dom";
 import "./SmallLapTopHeaderBarStyle.css";
 
 function SmallLapTopHeaderBar() {
+
+    console.log("SmallLapTop");
+
     const [menuOpen, setMenuOpen] = useState(false);
 
     const toggleMenu = () => {
@@ -17,7 +20,7 @@ function SmallLapTopHeaderBar() {
     return (
         <header id="headerBar-s">
             <div id="titre-header-s">
-                <p>Cabinet infirmier</p>
+                <p>XXCabinet infirmier</p>
                 <p>Anne Chir</p>
                 <p>Dominique Fernandez</p>
                 <p>Puteaux, Rueil</p>

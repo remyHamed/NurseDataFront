@@ -6,6 +6,8 @@ import {Link} from "react-router-dom";
 
 function LargeViewHeaderBar() {
 
+    console.log("large");
+
     //TODO MUST BECOME AN INPUT
     //TODO MUST BECOME A GLOBAL VARIABLE
     const routeChange = () => {

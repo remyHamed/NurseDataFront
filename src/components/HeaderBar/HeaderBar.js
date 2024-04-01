@@ -20,16 +20,18 @@ function HeaderBar() {
     };
 
     const selectComponentBasedOnWidth = () => {
-        if (windowWidth < breakpoints.phone) {
+        if (windowWidth <= breakpoints.phone) {
             return <PhoneHeaderBar />;
-        } else if (windowWidth >= breakpoints.phone && windowWidth < breakpoints.tablet) {
+        } else if (windowWidth <= breakpoints.tablet ) {
             return <TabletHeaderBar />;
-        } else if (windowWidth >= breakpoints.tablet && windowWidth < breakpoints.smallLaptop) {
+        } else if (windowWidth <= breakpoints.smallLaptop) {
             return <SmallLapTopHeaderBar />;
         } else {
             return <LargeViewHeaderBar />;
         }
     };
+
+    console.log('window width:', windowWidth);
 
     return selectComponentBasedOnWidth();
 }

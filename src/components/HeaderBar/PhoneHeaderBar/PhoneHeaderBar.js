@@ -6,6 +6,9 @@ import phoneHeaderStyle from "./PhoneHeaderBarStyle.css"
 
 function PhoneHeaderBar() {
 
+
+    console.log("phone");
+
     //TODO MUST BECOME AN INPUT
     //TODO MUST BECOME A GLOBAL VARIABLE
     const routeChange = () => {
