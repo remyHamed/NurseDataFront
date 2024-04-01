@@ -24,11 +24,31 @@
     line-height: 1.5;
 }
 
-
 .container-nurse-information > h1 {
     color: dodgerblue;
 }
 
 #firstParagraphe {
     margin-bottom: 1em;
+}
+
+/* Media Query pour une largeur d'écran de 640 pixels */
+@media screen and (max-width: 640px) {
+    .container-nurse-information {
+        font-size: 20px;
+    }
+}
+
+/* Media Query pour une largeur d'écran de 900 pixels */
+@media screen and (min-width: 640px) and (max-width: 900px) {
+    .container-nurse-information {
+        margin-top: 26vh;
+    }
+}
+
+/* Media Query à partir de 1200 pixels */
+@media screen and (min-width: 1200px) {
+    .container-nurse-information {
+        font-size: 28px;
+    }
 }
