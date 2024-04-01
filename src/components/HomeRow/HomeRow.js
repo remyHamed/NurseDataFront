@@ -16,7 +16,7 @@ function HomeRow() {
     }, []);
 
     const breakpoints = {
-        phone: 600,
+        phone: 640,
         tablet: 900,
         smallLaptop: 1200,
     };
@@ -24,9 +24,9 @@ function HomeRow() {
     const selectComponentBasedOnWidth = () => {
         if (windowWidth <= breakpoints.phone) {
             return <PhoneHomeRowComponent />;
-        } else if (windowWidth >= breakpoints.phone && windowWidth < breakpoints.tablet) {
+        } else if (windowWidth <= breakpoints.tablet ) {
             return <TabletHomeRowComponent />;
-        } else if (windowWidth >= breakpoints.tablet && windowWidth < breakpoints.smallLaptop) {
+        } else if (windowWidth <= breakpoints.smallLaptop) {
             return <SmallLapTopHomeRowComponent />;
         } else {
             return <LargeViewHomeRowComponent />;

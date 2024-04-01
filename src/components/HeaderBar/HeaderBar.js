@@ -14,7 +14,7 @@ function HeaderBar() {
     }, []);
 
     const breakpoints = {
-        phone: 600,
+        phone: 640,
         tablet: 900,
         smallLaptop: 1200,
     };

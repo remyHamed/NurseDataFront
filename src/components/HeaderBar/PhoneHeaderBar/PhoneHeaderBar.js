@@ -1,11 +1,15 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {Link} from "react-router-dom";
 import phoneHeaderStyle from "./PhoneHeaderBarStyle.css"
-
-
+import w3c from 'font-awesome/css/font-awesome.min.css';
 
 function PhoneHeaderBar() {
 
+    const [menuVisible, setMenuVisible] = useState(false);
+
+    const toggleMenu = () => {
+        setMenuVisible(!menuVisible);
+    };
 
     console.log("phone");
 
@@ -17,29 +21,33 @@ function PhoneHeaderBar() {
     }
 
     return (
-        <header id = "headerBar-l">
-            <div id="titre-header-l">
-                <h2>
-                    Cabinet infirmier
-                </h2>
-                <h3 >
-                    Anne Chir
-                </h3>
-                <h3 >
-                    Dominique Fernandez
-                </h3>
-                <h4>
-                    Puteaux, Rueil
-                </h4>
+        <header id="main">
+            <div id = "headerBar-p">
+                <div>
+                    <div id="titre-header-p">
+                        <h2>
+                            Cabinet infirmier
+                        </h2>
+                        <p>
+                            Anne Chir, Dominique Fernandez
+                        </p>
+                        <p>
+                            Puteaux, Rueil
+                        </p>
+                    </div>
+                </div>
+                <div id="nav-menu-p">
+                    <i id="burger-menu-icon" className="fa fa-bars" onClick={toggleMenu}></i>
+                </div>
             </div>
-            <div id="nav-menu-l">
-                <nav>
+            <div id="nav-menu-p">
+                <nav className={menuVisible ? "menu-visible" : "menu-hidden"}>
                     <ul>
                         <li>
-                            <Link class="l" to="/">Accueil</Link>
+                            <Link className="p" to="/">Accueil</Link>
                         </li>
                         <li>
-                            <Link class="l" to="/nurseinformation">Les infirmiers</Link>
+                            <Link className="p" to="/nurseinformation">Les infirmiers</Link>
                         </li>
                         <li>
                             Les soins à domicile
@@ -49,11 +57,6 @@ function PhoneHeaderBar() {
                         </li>
                     </ul>
                 </nav>
-            </div>
-            <div>
-                <button id="header-button-l" onClick={routeChange}>
-                    Prendre rendez-vous
-                </button>
             </div>
         </header>
     );

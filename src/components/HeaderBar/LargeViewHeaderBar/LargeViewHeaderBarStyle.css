@@ -61,7 +61,7 @@
     margin: 0;
 }
 
-header li {
+#nav-menu-l > nav > ul > li {
     font-weight: 700;
     text-transform: uppercase;
     height: 60px;
