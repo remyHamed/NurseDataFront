@@ -3,7 +3,6 @@ import LargeViewHomeRowStyle from "./LargeViewHomeRowStyle.css";
 import infinity from "../../../assets/indinity-3.png";
 import background from "../../../assets/background.webp";
 import bluePhone from "../../../assets/pblue.png"
-import MapComponent from "../../MapComponent/MapComponent";
 
 
 function LargeViewHomeRowComponent() {
